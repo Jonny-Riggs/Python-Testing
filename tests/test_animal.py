@@ -31,7 +31,7 @@ class TestAnimal(unittest.TestCase):
         self.bob.set_species("Poodle")
         self.assertIs(self.bob.species, "Poodle")
 
-    def test_animal_can_walk(self):
+    def test_setting_speed(self):
         self.bob.set_legs(6)
         self.bob.walk()
         self.assertEqual(self.bob.speed, 1.20)
